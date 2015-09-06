@@ -31,6 +31,7 @@
 		</script>
 
 		<!-- Create component using React.createStatement -->
+		<!-- Here default type for script is type="text/javascript" -->
 		<script>
 			var App = React.createClass({
 				render: function(){
@@ -42,3 +43,31 @@
 	</body>
 </html>
 ```
+```
+render: function(){
+	return 
+		<div>                            ===> This is wrong
+			<b> Bold </b>
+			<h1> Hello World </h1>
+		</div>
+}
+
+render: function(){
+	return <div>                            ===> This is correct, did yo observe the indentation
+				<b> Bold </b>
+				<h1> Hello World </h1>
+			</div>
+}
+
+render: function(){
+	return (                            ===> This is correct, because we have used () to enclose html
+		<div>
+			<b> Bold </b>
+			<h1> Hello World </h1>
+		</div>
+		)
+}
+```
+
+####Introduction to properties
+var App = 
