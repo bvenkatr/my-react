@@ -4,4 +4,4 @@ but it's simple and hackable enough to be used for testing, local development, a
 https://www.npmjs.com/package/http-server
 
 http-server [path] [options]
-[path] defaults to ./public if the folder exists, and ./ otherwise.
+[path] defaults to ./public/index.html if the folder exists, and ./index.html otherwise.

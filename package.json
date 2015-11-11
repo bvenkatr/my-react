@@ -4,7 +4,8 @@
   "description": "``` <!DOCTYPE html> <html lang=\"en\"> \t<head> \t\t<meta charset=\"UTF-8\"> \t\t<title>Hello World</title> \t\t<script src=\"./plugins/react.js\"></script> \t\t<script src=\"./plugins/JSXTransformer.js\"></script> \t</head> \t<body> \t\t<!-- Create component using jsx syntax --> \t\t<script type=\"text/jsx\"> \t\t\tvar App = React.createClass({ \t\t\t\trender: function(){ \t\t\t\t\treturn <h1>Hiiiiiii</h1> \t\t\t\t} \t\t\t}); \t\t\tReact.render(<App />, document.body) \t\t</script>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
