@@ -3,6 +3,6 @@ module.exports = {
 		helloWorld: './js/helloworld'
 	},
 	output: {
-		filename: 'public/[name].js'
+		filename: 'temp/[name].js'
 	}
 };
