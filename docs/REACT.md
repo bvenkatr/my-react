@@ -53,7 +53,7 @@ render: function(){
 }
 
 render: function(){
-	return <div>                            ===> This is correct, did yo observe the indentation
+	return <div>                            ===> This is correct, did you observe the position of first div
 				<b> Bold </b>
 				<h1> Hello World </h1>
 			</div>
