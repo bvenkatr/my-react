@@ -1,14 +1,16 @@
 import React, {Component} from "react";
+import cssModules from "react-css-modules";
+import styles from "./HelloWorld.css";
 
 class HelloWorld extends Component {
-  constructor(props, context){
-    super(props, context);
-  }
   render() {
     return (
-      <h1>Hello Venkat, This is a full blown component created by you and served by GitHub pages <br/> Thanks.</h1>
+      <div styleName="color">
+        <h1>Hello Venkat, This is a full blown component created by you and served by GitHub pages
+          <br/> Thanks.</h1>
+      </div>
     );
   }
 }
 
-export default HelloWorld;
+export default cssModules(HelloWorld, styles);
