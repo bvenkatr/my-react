@@ -13,15 +13,19 @@
 <script type="text/javascript">
 	var HelloWorld = React.createClass({
 		render: function () {
-			return React.createElement('h1', null, 'Hello World!!!');
+			return React.createElement(
+					'h1',
+					null,
+					'Hello '+ this.props.name + ' World!!!'
+			);
 		}
 	});
 	ReactDOM.render(
 		React.createElement(
 				'div',
 				null,
-				React.createElement(HelloWorld, null),
-				React.createElement(HelloWorld, null)
+				React.createElement(HelloWorld, {name: "ReactJS"}),
+				React.createElement(HelloWorld, {name: "NodeJS"})
 		),
 		document.getElementById('example'));
 </script>
