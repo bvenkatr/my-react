@@ -32,6 +32,12 @@
 	//Once the element is created, we can render it to the actual DOM element with ID example
 	ReactDOM.render(h1, document.getElementById('example'));
 
+	////////////////////////////////
+	//
+	// ReactDOM.render(React.createElement('h1', null, 'Hello World!'), document.getElementById('example'));
+	//
+	////////////////////////////////
+
 	// Warning render(): Rendering components directly into document.body is discouraged,
 	// since its children are often manipulated by third-party scripts and browser extensions.
 	// This may lead to subtle reconciliation issues. Try rendering into a container element created for your app.
