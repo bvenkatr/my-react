@@ -5,8 +5,10 @@ class HelloWorld extends Component {
     super(props, context);
   }
   render() {
-    return (       <h1>Heloo0000</h1>     );
+    return (
+      <h1>Hello Venkat, This is a full blown component created and served by GitHub pages <br/> Thanks.</h1>
+    );
   }
 }
 
-export default HelloWorld
+export default HelloWorld;

@@ -20369,7 +20369,9 @@
 	      return _react2.default.createElement(
 	        "h1",
 	        null,
-	        "Heloo0000"
+	        "Hello Venkat, This is a full blown component created and served by GitHub pages ",
+	        _react2.default.createElement("br", null),
+	        " Thanks."
 	      );
 	    }
 	  }]);
