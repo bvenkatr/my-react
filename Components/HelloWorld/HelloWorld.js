@@ -1,1 +1,12 @@
-module.exports = ReactDOM.render(React.createElement('h1', null, "HelloWord!"), document.getElementById('example'));
+import React, {Component} from "react";
+
+class HelloWorld extends Component {
+  constructor(props, context){
+    super(props, context);
+  }
+  render() {
+    return (       <h1>Heloo0000</h1>     );
+  }
+}
+
+export default HelloWorld
