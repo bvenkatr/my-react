@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Hello World</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
-	</head>
-	<body>
-		<script type="text/jsx">
-			var App = React.createClass({
-				render: function(){
-					return <h1>Hiiiiiii</h1>
-				}
-			});
-			React.render(<App />, document.body)
-		</script>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World</title>
+
+	<!--hot-linking form CDN-->
+	<!--By including the libraries in the HTML file, we getting access to the React and ReactDOM global objects,
+	i.e., window.React and window.ReactDOM.-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+
+</head>
+<body>
+
+<div id="example"></div>
+
+<script type="text/javascript">
+
+	/*In our example, the createElement method takes three parameters:
+	 1. HTML or component name as a string, e.g., <h1>
+	 2. Data in the form of attributes and props (we'll cover props later), e.g., null or {name:
+	 'Azat'}
+	 3. Children, or inner HTML or content, e.g., Hello world!
+	 */
+
+	//The code to create an h1 element is in plain JavaScript.
+	// All we are doing is calling createElement with three arguments.
+	// As a result, we are getting an object h1which is a special React class or component:
+	var h1 = React.createElement('h1', null, 'Hello World!');
+
+	//Once the element is created, we can render it to the actual DOM element with ID example
+	ReactDOM.render(h1, document.getElementById('example'));
+
+	// Warning render(): Rendering components directly into document.body is discouraged,
+	// since its children are often manipulated by third-party scripts and browser extensions.
+	// This may lead to subtle reconciliation issues. Try rendering into a container element created for your app.
+	//ReactDOM.render(<App />, document.body)
+
+</script>
+
+</body>
 </html>
