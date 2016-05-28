@@ -71,3 +71,8 @@ render: function(){
 
 ####Introduction to properties
 var App = 
+
+
+The h1 variable name is totally arbitrary. You can name it anyway you want, 
+e.g., bananza, as long as you utilize the same variable in ReactDOM.render().
+var h1 = React.createElement('h1', null, 'Hello World!');
