@@ -69,5 +69,12 @@ render: function(){
 }
 ```
 
+```
+Props are immutable and dumb which means they can only be passed from parent components down and cannot be changed. 
+This poses a challenge because, modern apps do not rely on having all of it's states ready on page load. 
+Ajax or Events could happen and when data returns, someone needs to be responsible for making updates. 
+This is where React states comes in.
+```
+
 ####Introduction to properties
 var App = 
