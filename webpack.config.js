@@ -6,7 +6,7 @@ module.exports = {
 		index :'./index.js'// This will generate index.js as the final bundle
 	},
 	output: {
-		filename: './dist/[name].bundle.js'
+		filename: 'dist/[name].bundle.js'
 	},
 	plugins: [
 		new ExtractTextPlugin("app.css", {

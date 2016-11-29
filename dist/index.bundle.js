@@ -21518,7 +21518,7 @@
 	        { styleName: "color" },
 	        _react2.default.createElement(
 	          "h1",
-	          null,
+	          { styleName: "textColor" },
 	          "Hello Venkat, This is a full blown component created by you and served by GitHub pages",
 	          _react2.default.createElement("br", null),
 	          " Thanks."
@@ -27068,7 +27068,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"color":"HelloWorld__color___1K_ZR"};
+	module.exports = {"color":"HelloWorld__color___1K_ZR","textColor":"HelloWorld__textColor___1Nmnk"};
 
 /***/ }
 /******/ ]);
