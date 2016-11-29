@@ -1,2 +1,3 @@
 ### gh-pages
-Just run `webpack` on terminal
+Generate bundle file >>> webpack
+To run server >>> npm start
